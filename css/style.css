@@ -12,55 +12,56 @@ body{
     font-style: normal;
 }
 
-.menu a img{
-	/*width: 100%;*/
-}
-
 .navbar{
 	margin-bottom: 0;
 }
 
 /*Moving car*/
+/*=========================*/
 .road{
 	background-color: #2C2C2C;
 	padding: 20px 0; 
-	/*position: relative;*/
+	border: 2px solid white;
+	z-index: 2;
 }
 
 .dottedLine{
 	border: 2px dotted #fff;
 	position: relative;
-    /*display: block;*/
+	z-index: 2;
 }
-
 
 .road img{
-	width: 45px;
-}
-
-.object{
-    
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 2s ease-in-out; /** Firefox **/
-    -o-transition: all 2s ease-in-out; /** Opera **/
-}
-
-.van {
 	position: absolute;
-    top: 0%;
-    /*left: 0%;*/
+	top: -10px;
+	left: 0;
+	width: 45px;
+	transition: all 5s ease-in-out;
+	z-index: 2;
 }
 
-#axis:hover .move-right{
-    transform: translate(350px,0);
-    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
-    -o-transform: translate(350px,0); /** Opera **/
-    -moz-transform: translate(350px,0); /** Firefox **/
+@media (max-width: 320px){
+	.road img:hover{
+		left: 310px;
+	}
 }
+@media (min-width: 321px) and (max-width: 768px){
+	.road img:hover{
+		left: 755px;
+	}
+}
+
+@media (min-width: 769px){
+	.road img:hover{
+		left: 800px;
+	}
+}
+
+/*=========================*/
+
 
 /*Search*/
-
+/*=========================*/
 .searchForm{
 	padding: 40px 0;
 	padding-left: 30%;
