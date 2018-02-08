@@ -1,0 +1,267 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+
+@font-face {
+
+    font-family: futura-medium;
+    src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+.menu a img{
+	/*width: 100%;*/
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+/*Moving car*/
+.road{
+	background-color: #2C2C2C;
+	padding: 20px 0; 
+	/*position: relative;*/
+}
+
+.dottedLine{
+	border: 2px dotted #fff;
+	position: relative;
+    /*display: block;*/
+}
+
+
+.road img{
+	width: 45px;
+}
+
+.object{
+    
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+.van {
+	position: absolute;
+    top: 0%;
+    /*left: 0%;*/
+}
+
+#axis:hover .move-right{
+    transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+
+/*Search*/
+
+.searchForm{
+	padding: 40px 0;
+	padding-left: 30%;
+	background-color: #34394A;
+}
+
+@media screen and (max-width: 320px){
+	.searchForm{
+		padding: 40px 0;
+		/*padding-left:  50px;*/
+		background-color: #34394A;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+	.searchForm{
+		padding: 40px 0;
+		padding-left:  0px;
+		background-color: #34394A;
+	}	
+}
+
+.searchForm label{
+	color: white;
+}
+
+/*.searchForm form{
+	display: block;
+	margin: 0 auto;
+}*/
+
+.paribahan{
+
+	border-radius: 5px;
+	background-color: #FFCC00;
+}
+
+.paribahan img{
+	width: 100%;
+}
+
+.paribahan h3{
+		padding: 10px;
+}
+
+
+/*Ambulance*/
+.ambulance{
+
+	border-radius: 5px;
+	background-color: #232C3B;
+}
+
+.ambulance img{
+	width: 100%;
+}
+
+.ambulance h3{
+		padding: 10px;
+}
+
+.ambulanceInfo{
+	background-color: #FF4818;
+	/*border: 2px solid black;*/
+	overflow: auto;
+}
+
+.ambulanceInfo ul{
+	list-style: none;
+}
+
+.ambulanceInfo ul li{
+	/*display: inline-block;*/
+	color: #fff;
+    margin-left: -30px;
+}
+
+.ambulanceInfo ul li i{
+		margin-right: 5px;
+}
+
+.ambulanceFeatures1{
+	float: left;
+}
+
+.ambulanceFeatures2{
+	float: right;
+}
+
+.contactInfo ul{
+	list-style: none;
+	margin-left: -40px;
+}
+
+.contactUs{
+	background-image: url(../images/contact-us-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: .9;
+	background-color: #181B1F;
+	overflow: auto;
+	margin-top: 20px;
+	padding: 50px 0;
+}
+
+.contactForm input {
+    /*background-color: transparent;*/
+    opacity: .3;
+    width: 49%;
+}
+
+.contactForm textarea {
+    /*background-color: transparent;*/
+    opacity: .3;
+    width: 98.5%
+}
+
+input#name::placeholder,
+textarea::placeholder {
+    color: #44535C;
+}
+
+.contactUs h3 {
+    font-weight: 900;
+    /*color: #fff;*/
+}
+
+.contactUs h4 {
+    font-weight: 700;
+    /*color: #fff;*/
+}
+
+.sendMessage{
+	background-color: red;
+	border: 2px solid red;
+	width: 100%;
+	color: white;
+}
+
+.footerInfo{
+	background-color: #1D1D1F;
+	overflow: auto;
+	padding: 3%;
+}
+
+.footerInfo h3::before{
+
+	content: "";
+	/*display: inline-block;*/
+	width: 10px;
+	border: 2px solid yellow;
+	margin-right: 10px;
+
+}
+
+.footerInfo h3{
+	color: yellow;
+}
+
+.footerInfo p{
+	color: #A8A7A7;
+}
+
+.footerInfo ul{
+	list-style: none;
+	margin-left: -15%;
+}
+
+.footerInfo ul li{
+	color: #A8A7A7;
+	padding-top: 10px;
+}
+.footerInfo ul li i{
+	margin-right: 10px;
+}
+
+.usefulLink li::before{
+	content: "";
+    width: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid yellow;
+}
+
+.usefulLink{
+	/*list-style: none;*/
+	/*margin-left: -20px;*/
+}
+.usefulLink li{
+	/*color:#A8A7A7;*/
+	
+}
+
+.photoGallery img{
+	width: 100%;
+}
+
+.gallery{
+	border: 2px solid #2F2F30;
+	padding: 2px;
+}
+
+
