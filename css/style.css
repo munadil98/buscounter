@@ -18,6 +18,50 @@ body{
 
 /*Moving car*/
 /*=========================*/
+
+
+
+@media (max-width: 320px){
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 100px;}
+	}
+
+	/* Standard syntax */
+	@keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 100px;}
+	}
+}
+@media (min-width: 321px) and (max-width: 768px){
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 768px;}
+	}
+
+	/* Standard syntax */
+	@keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 768px;}
+	}
+}
+
+@media (min-width: 769px){
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 1350px;}
+	}
+
+	/* Standard syntax */
+	@keyframes mymove {
+	    from {left: 0px;}
+	    to {left: 1350px;}
+	}
+}
+
 .road{
 	background-color: #2C2C2C;
 	padding: 20px 0; 
@@ -36,26 +80,12 @@ body{
 	top: -10px;
 	left: 0;
 	width: 45px;
-	transition: all 5s ease-in-out;
+	/*transition: all 5s ease-in-out;*/
+    -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 10s infinite;
 	z-index: 2;
 }
 
-@media (max-width: 320px){
-	.road img:hover{
-		left: 200px;
-	}
-}
-@media (min-width: 321px) and (max-width: 768px){
-	.road img:hover{
-		left: 755px;
-	}
-}
-
-@media (min-width: 769px){
-	.road img:hover{
-		left: 1100px;
-	}
-}
 
 /*=========================*/
 
